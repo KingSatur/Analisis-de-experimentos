@@ -137,16 +137,10 @@ namespace Análisis_de_experimentos
 
                 }
 
+
                 writer.Close();
                 fs.Close();
             }
-
-
-
-            
-
-
-
         }
 
         public void generarRepeticion2()
@@ -185,16 +179,7 @@ namespace Análisis_de_experimentos
                 writer.Close();
                 fs.Close();
             }
-
-
-
-
-
-
-
         }
-
-
 
         private int getNextGap(int gap)
         {
@@ -252,7 +237,7 @@ namespace Análisis_de_experimentos
         {
 
             Ordenamientos m = new Ordenamientos();
-            m.generarRepeticion2();
+ 
            
 
 
