@@ -6,49 +6,54 @@ using System.Threading.Tasks;
 
 namespace Análisis_de_experimentos
 {
-    class Ordenamientos
+    public class Ordenamientos
     {
 
         private TimeSpan stop;
         private TimeSpan start;
         private double time;
 
-        public int[] CountingSort(int[] array)
+        public int[] CountingSort(int[] A)
         {
 
             start = new TimeSpan(DateTime.Now.Ticks);
 
-            int[] count = new int[11];
-
-            for (int i = 0; i < array.Length; i++)
+            int n = A.Length - 1;
+            int k = A[0];
+            for (int i = 1; i <= n; i++)
             {
-                int value = array[i];
-                count[value]++;
+                if (A[i] > k)
+                {
+                    k = A[i];
+                }
             }
+            int[] C = new int[k + 1];
 
-            for (int i = 1; i < count.Length; i++)
+            for (int i = 0; i <= k; i++)
             {
-                count[i] = count[i] + count[i - 1];
+                C[i] = 0;
             }
-
-            int[] sorted = new int[array.Length];
-
-            for (int i = array.Length - 1; i >= 0; i--)
+            for (int i = 0; i <= n; i++)
             {
-                int value = array[i];
-                int position = count[value] - 1;
-                sorted[position] = value;
-
-                count[value]--;
+                C[A[i]] = C[A[i]] + 1;
+            }
+            for (int i = 1; i <= k; i++)
+            {
+                C[i] = C[i] + C[i - 1];
+            }
+            int[] B = new int[n + 1];
+            for (int i = n; i >= 0; i--)
+            {
+                C[A[i]] = C[A[i]] - 1;
+                B[C[A[i]]] = A[i];
             }
 
             stop = new TimeSpan(DateTime.Now.Ticks);
             time = stop.Subtract(start).TotalMilliseconds;
 
-            return sorted;
+            return B;
+
         }
-
-
 
         private int getNextGap(int gap)
         {
@@ -102,22 +107,35 @@ namespace Análisis_de_experimentos
 
         }
 
-
-
         public static void Main(string[] args)
         {
 
-            int[] a = new int[1000000];
             Ordenamientos algoritmos = new Ordenamientos();
+            /**
+            int[] a = new int[1000000];
 
             for (int i = 0; i < a.Length; ++i)
             {
                 a[i] = new Random().Next(100000);
             }
+            **/
 
-            algoritmos.CombSort(a);
+            /**
+            algoritmos.CountingSort(a);
 
             Console.WriteLine(algoritmos.time);
+            **/
+
+            int[] arrayOne = { 10, 40, 100, 2, 39, 21, 23, 43, 69, 88 };
+            int[] ordenedArrayOne = algoritmos.CountingSort(arrayOne);
+
+            for(int i =0; i < ordenedArrayOne.Length; i++)
+            {
+                Console.WriteLine(ordenedArrayOne[i]);
+            }
+
+
+           
         }
     }
 }
