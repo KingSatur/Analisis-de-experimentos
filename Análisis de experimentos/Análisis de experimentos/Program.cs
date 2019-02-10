@@ -12,6 +12,7 @@ namespace Análisis_de_experimentos
         private TimeSpan stop;
         private TimeSpan start;
         private double time;
+        public static double factor = 1000.000;
 
         private int[] fillArray(int n)
         {
@@ -116,23 +117,18 @@ namespace Análisis_de_experimentos
                 {
                     if((j + 1) == 1)
                     {
-                        MergeSort(fillArray(10));
-                        writer.WriteLine(time * 1000000);
+                        MergeSort(fillArray(10000));
+                        writer.WriteLine(time * factor);
                     }
                     else if((j + 1) == 2)
                     {
-                        MergeSort(fillArray(1000));
-                        writer.WriteLine(time * 1000000);
+                        MergeSort(fillArray(100000));
+                        writer.WriteLine(time * factor);
                     }
                     else if((j + 1) == 3)
                     {
-                        MergeSort(fillArray(10000));
-                        writer.WriteLine(time * 1000000);
-                    }
-                    else if((j + 1)== 4)
-                    {
                         MergeSort(fillArray(1000000));
-                        writer.WriteLine(time * 1000000);
+                        writer.WriteLine(time * factor);
                     }
 
                 }
@@ -155,23 +151,18 @@ namespace Análisis_de_experimentos
                 {
                     if ((j + 1) == 1)
                     {
-                        CombSort(fillArray(10));
-                        writer.WriteLine(time * 1000000);
+                        CombSort(fillArray(10000));
+                        writer.WriteLine(time * factor);
                     }
                     else if ((j + 1) == 2)
                     {
-                        CombSort(fillArray(1000));
-                        writer.WriteLine(time * 1000000);
+                        CombSort(fillArray(100000));
+                        writer.WriteLine(time * factor);
                     }
                     else if ((j + 1) == 3)
                     {
-                        CombSort(fillArray(10000));
-                        writer.WriteLine(time * 1000000);
-                    }
-                    else if ((j + 1) == 4)
-                    {
                         CombSort(fillArray(1000000));
-                        writer.WriteLine(time * 1000000);
+                        writer.WriteLine(time * factor);
                     }
 
                 }
@@ -237,6 +228,7 @@ namespace Análisis_de_experimentos
         {
 
             Ordenamientos m = new Ordenamientos();
+            m.generarRepeticion2();
  
            
 
