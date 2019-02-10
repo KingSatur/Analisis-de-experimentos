@@ -8,14 +8,12 @@ namespace Análisis_de_experimentos
 {
     public class Ordenamientos
     {
-
         private TimeSpan stop;
         private TimeSpan start;
         private double time;
 
         public int[] CountingSort(int[] A)
         {
-
             start = new TimeSpan(DateTime.Now.Ticks);
 
             int n = A.Length - 1;
@@ -33,14 +31,17 @@ namespace Análisis_de_experimentos
             {
                 C[i] = 0;
             }
-            for (int i = 0; i <= n; i++)
+
+            for (int i = 0; i <= n - 1; i++)
             {
                 C[A[i]] = C[A[i]] + 1;
             }
+
             for (int i = 1; i <= k; i++)
             {
                 C[i] = C[i] + C[i - 1];
             }
+
             int[] B = new int[n + 1];
             for (int i = n; i >= 0; i--)
             {
@@ -54,6 +55,73 @@ namespace Análisis_de_experimentos
             return B;
 
         }
+
+        public void MergeSort(int[] input, int low, int high)
+        {
+            if (low < high)
+            {
+                int middle = (low / 2) + (high / 2);
+                MergeSort(input, low, middle);
+                MergeSort(input, middle + 1, high);
+                Merge(input, low, middle, high);
+            }
+        }
+
+        public void MergeSort(int[] input)
+        {
+            MergeSort(input, 0, input.Length - 1);
+        }
+
+        private void Merge(int[] input, int low, int middle, int high)
+        {
+
+            int left = low;
+            int right = middle + 1;
+            int[] tmp = new int[(high - low) + 1];
+            int tmpIndex = 0;
+
+            while ((left <= middle) && (right <= high))
+            {
+                if (input[left] < input[right])
+                {
+                    tmp[tmpIndex] = input[left];
+                    left = left + 1;
+                }
+                else
+                {
+                    tmp[tmpIndex] = input[right];
+                    right = right + 1;
+                }
+                tmpIndex = tmpIndex + 1;
+            }
+
+            if (left <= middle)
+            {
+                while (left <= middle)
+                {
+                    tmp[tmpIndex] = input[left];
+                    left = left + 1;
+                    tmpIndex = tmpIndex + 1;
+                }
+            }
+
+            if (right <= high)
+            {
+                while (right <= high)
+                {
+                    tmp[tmpIndex] = input[right];
+                    right = right + 1;
+                    tmpIndex = tmpIndex + 1;
+                }
+            }
+
+            for (int i = 0; i < tmp.Length; i++)
+            {
+                input[low + i] = tmp[i];
+            }
+
+        }
+
 
         private int getNextGap(int gap)
         {
@@ -111,28 +179,30 @@ namespace Análisis_de_experimentos
         {
 
             Ordenamientos algoritmos = new Ordenamientos();
-            /**
-            int[] a = new int[1000000];
+           
+            int[] a = new int[100];
 
             for (int i = 0; i < a.Length; ++i)
             {
-                a[i] = new Random().Next(100000);
+                if(i % 3 == 0)
+                {
+                    a[i] =-(new Random().Next(i * 200 + 1));
+                }
+                else
+                {
+                    a[i] = new Random().Next(i * 300 + 1);
+                }
+               
+            
             }
-            **/
 
-            /**
-            algoritmos.CountingSort(a);
-
-            Console.WriteLine(algoritmos.time);
-            **/
-
-            int[] arrayOne = { 10, 40, 100, 2, 39, 21, 23, 43, 69, 88 };
-            int[] ordenedArrayOne = algoritmos.CountingSort(arrayOne);
-
-            for(int i =0; i < ordenedArrayOne.Length; i++)
+            algoritmos.MergeSort(a);
+        
+            for(int i =0; i < a.Length; i++)
             {
-                Console.WriteLine(ordenedArrayOne[i]);
+                Console.WriteLine(a[i]);
             }
+           
 
 
            

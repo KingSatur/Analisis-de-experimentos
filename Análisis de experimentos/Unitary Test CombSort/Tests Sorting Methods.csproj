@@ -50,8 +50,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TestCountingSort.cs" />
     <Compile Include="TestCombSort.cs" />
+    <Compile Include="TestMergeSort.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

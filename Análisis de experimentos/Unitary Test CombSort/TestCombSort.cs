@@ -12,13 +12,17 @@ namespace Unitary_Test_CombSort
 
         private void fillArray(int[] a)
         {
-
-            for (int i = 0; i < a.Length; i++)
+            for (int i = 0; i < a.Length; ++i)
             {
-                a[i] = new Random().Next(1, a.Length) + i;
+                if (i % 3 == 0)
+                {
+                    a[i] = -(new Random().Next(i * 200 + 1));
+                }
+                else
+                {
+                    a[i] = new Random().Next(i * 300 + 1);
+                }
             }
-
-
         }
 
 
