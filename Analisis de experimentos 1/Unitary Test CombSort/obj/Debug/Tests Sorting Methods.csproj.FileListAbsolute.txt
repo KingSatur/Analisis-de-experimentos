@@ -1,0 +1,20 @@
+C:\Users\Juan David\Source\Repos\Analisis-de-experimentos2\Análisis de experimentos\Unitary Test CombSort\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\Juan David\Source\Repos\Analisis-de-experimentos2\Análisis de experimentos\Unitary Test CombSort\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\Juan David\Source\Repos\Analisis-de-experimentos2\Análisis de experimentos\Unitary Test CombSort\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\Juan David\Source\Repos\Analisis-de-experimentos2\Análisis de experimentos\Unitary Test CombSort\bin\Debug\es\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.resources.dll
+C:\Users\Juan David\Source\Repos\Analisis-de-experimentos2\Análisis de experimentos\Unitary Test CombSort\bin\Debug\es\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.resources.dll
+C:\Users\Juan David\Source\Repos\Analisis-de-experimentos2\Análisis de experimentos\Unitary Test CombSort\bin\Debug\es\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+C:\Users\Juan David\Source\Repos\Analisis-de-experimentos2\Análisis de experimentos\Unitary Test CombSort\bin\Debug\Unitary Test CombSort.dll
+C:\Users\Juan David\Source\Repos\Analisis-de-experimentos2\Análisis de experimentos\Unitary Test CombSort\bin\Debug\Unitary Test CombSort.pdb
+C:\Users\Juan David\Source\Repos\Analisis-de-experimentos2\Análisis de experimentos\Unitary Test CombSort\bin\Debug\Análisis de experimentos.exe
+C:\Users\Juan David\Source\Repos\Analisis-de-experimentos2\Análisis de experimentos\Unitary Test CombSort\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Users\Juan David\Source\Repos\Analisis-de-experimentos2\Análisis de experimentos\Unitary Test CombSort\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Users\Juan David\Source\Repos\Analisis-de-experimentos2\Análisis de experimentos\Unitary Test CombSort\bin\Debug\Análisis de experimentos.pdb
+C:\Users\Juan David\Source\Repos\Analisis-de-experimentos2\Análisis de experimentos\Unitary Test CombSort\bin\Debug\Análisis de experimentos.exe.config
+C:\Users\Juan David\Source\Repos\Analisis-de-experimentos2\Análisis de experimentos\Unitary Test CombSort\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Users\Juan David\Source\Repos\Analisis-de-experimentos2\Análisis de experimentos\Unitary Test CombSort\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Users\Juan David\Source\Repos\Analisis-de-experimentos2\Análisis de experimentos\Unitary Test CombSort\obj\Debug\Tests Sorting Methods.csproj.CoreCompileInputs.cache
+C:\Users\Juan David\Source\Repos\Analisis-de-experimentos2\Análisis de experimentos\Unitary Test CombSort\obj\Debug\Tests Sorting Methods.csproj.CopyComplete
+C:\Users\Juan David\Source\Repos\Analisis-de-experimentos2\Análisis de experimentos\Unitary Test CombSort\obj\Debug\Unitary Test CombSort.dll
+C:\Users\Juan David\Source\Repos\Analisis-de-experimentos2\Análisis de experimentos\Unitary Test CombSort\obj\Debug\Unitary Test CombSort.pdb
+C:\Users\Juan David\Source\Repos\Analisis-de-experimentos2\Análisis de experimentos\Unitary Test CombSort\obj\Debug\Tests Sorting Methods.csprojAssemblyReference.cache
