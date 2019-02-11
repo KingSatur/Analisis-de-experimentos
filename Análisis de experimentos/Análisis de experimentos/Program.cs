@@ -1,4 +1,4 @@
-﻿using System;
+﻿        using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -12,7 +12,7 @@ namespace Análisis_de_experimentos
         private TimeSpan stop;
         private TimeSpan start;
         private double time;
-        public static double factor = 1000.000;
+        public static double factor = 1e+6;
 
         private int[] fillArray(int n)
         {

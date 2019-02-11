@@ -2,7 +2,7 @@ package modelo;
 
 public class MergeSort {
 
-	static void merge(int[] list, int l, int m, int r) 
+	public static void merge(int[] list, int l, int m, int r) 
 	{ 
 	    int i, j, k; 
 	    int n1 = m - l + 1; 
@@ -50,7 +50,7 @@ public class MergeSort {
 	} 
 	  
 	
-	static void mergeSort(int[] list, int l, int r) 
+	public static void mergeSort(int[] list, int l, int r) 
 	{ 
 	    if (l < r) 
 	    { 

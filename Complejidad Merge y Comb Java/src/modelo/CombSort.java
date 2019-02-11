@@ -12,7 +12,7 @@ public class CombSort {
     } 
   
     // Función para ordenar arr [] usando Comb Sort
-    void sort(int arr[]) 
+    public void sort(int arr[]) 
     { 
         int n = arr.length; 
   
